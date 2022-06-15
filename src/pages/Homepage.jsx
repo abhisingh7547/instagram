@@ -20,6 +20,7 @@ const Homepage = () => {
                     <CardContent sx={{padding:"50px 100px"}}>
                         <img width="100%" src="image/instagram_logo.png" alt="" />
                     </CardContent>
+                    <Typography varient="h6">hello this</Typography>
 
                 </Card>
                 
