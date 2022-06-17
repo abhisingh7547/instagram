@@ -2,31 +2,31 @@ import { Button, Card, CardContent, Divider, Grid, Paper, TextField, Typography,
 import { Container } from '@mui/system'
 import React, { useEffect, useState } from 'react'
 
-const styles={
+const styles= {
     container:{display:"flex",  backgroundColor:"#fafafa", padding:0 },
     gridcontainer:{padding:"0px 200px", mt:5},
     mobileBg:{
         backgroundColorSize:"cover",
         backgroundColor:"transparent",
-        backGroundImage:"url('image/backscreen.png')",
+        backgroundImage:"url('image/backscreen.png')",
         width:"100%",
-        height:"530px",
+        height:"600px"},
 
         slider:{
-            margin:"27px 0 0 113px",
+            margin:"30px 0 0 113px",
             position:"relative", 
         },
 
         screenshot:{
-            height:"480px",
-            left:25,
+            height:"535px",
+            left:40,
             position:"absolute",
-            top:20,
-            width:"225px"
+            top:30,
+            width:"300"
         }
 
     }
-}
+
 
 const Homepage = () => {
     // step 1
@@ -52,7 +52,7 @@ const Homepage = () => {
                 <Paper elevation={0} sx={styles.mobileBg}>
                     <div style={styles.slider}>
                         {/* step- 4 */}
-                        <img src={'image/${images[counter]}'} style={styles.screenshot} width="100%" alt="mobile"/>
+                        <img src={`image/${images[counter]}`} style={styles.screenshot}  alt="mobile"/>
                     </div>
                 </Paper>
             </Grid>
